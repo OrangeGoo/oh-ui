@@ -49,9 +49,18 @@ export default function LoginForm() {
             className="bg-gray-100"
           />
         </div>
-        <div className="relative mt-4">
+        <div className="flex justify-center text-sm text-gray-700">
+          Do not have an account?{' '}
+          <a href="/register" className="text-blue-500 hover:underline ml-1">
+            Sign up
+          </a>
+        </div>
+        <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
+          Continue
+        </Button>
+        <div className="relative">
           <div className="absolute inset-0 flex items-center">
-            <span className="w-full border-t border-gray-200" />
+            <span className="w-full border-t" />
           </div>
           <div className="relative flex justify-center text-xs uppercase">
             <span className="bg-white px-2 text-gray-500">
@@ -59,25 +68,16 @@ export default function LoginForm() {
             </span>
           </div>
         </div>
-        <div className="flex justify-center gap-4 mt-4">
-          {/* <Button variant="outline">
-            <Icons.gitHub className="mr-2 h-4 w-4" />
-            Github
-          </Button> */}
+        <div className="flex justify-center gap-6">
           <Button
             variant="outline"
-            className="flex items-center gap-2 text-gray-700 border-gray-300 hover:bg-gray-100"
+            className="flex items-center gap-2 text-gray-600 border-gray-300 hover:bg-gray-100"
           >
             <Icons.google className="h-4 w-4" />
             Google
           </Button>
         </div>
       </CardContent>
-      <CardFooter className="pt-4">
-        <Button className="w-full bg-blue-600 text-white hover:bg-blue-700">
-          Continue
-        </Button>
-      </CardFooter>
     </Card>
   );
 }

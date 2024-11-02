@@ -100,7 +100,7 @@ export default function RegisterForm() {
             Enter your details below to create an account.
           </CardDescription>
         </CardHeader>
-        <CardContent className="grid gap-4">
+        <CardContent className="grid gap-6 pt-4">
           <div className="grid gap-2">
             <Label htmlFor="uni">UNI</Label>
             <Input
@@ -206,6 +206,12 @@ export default function RegisterForm() {
               </p>
             )}
           </div>
+          <Button
+            className="w-full bg-blue-600 text-white hover:bg-blue-700"
+            disabled={isLoading}
+          >
+            Create Account
+          </Button>
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
               <span className="w-full border-t" />
@@ -226,14 +232,6 @@ export default function RegisterForm() {
             </Button>
           </div>
         </CardContent>
-        <CardFooter>
-          <Button
-            className="w-full bg-blue-600 text-white hover:bg-blue-700"
-            disabled={isLoading}
-          >
-            Create Account
-          </Button>
-        </CardFooter>
       </form>
     </Card>
   );
