@@ -109,6 +109,7 @@ export default function RegisterForm() {
               {...register('uni')}
               placeholder="Enter your UNI"
               disabled={isLoading}
+              className="bg-gray-100"
             />
             {errors.uni?.message && (
               <p className="text-red-500 text-sm">
@@ -124,6 +125,7 @@ export default function RegisterForm() {
               {...register('lastname')}
               placeholder="Enter your Last Name"
               disabled={isLoading}
+              className="bg-gray-100"
             />
             {errors.lastname && (
               <p className="text-red-500 text-sm">
@@ -139,6 +141,7 @@ export default function RegisterForm() {
               {...register('firstname')}
               placeholder="Enter your First Name"
               disabled={isLoading}
+              className="bg-gray-100"
             />
             {errors.firstname && (
               <p className="text-red-500 text-sm">
@@ -154,6 +157,7 @@ export default function RegisterForm() {
               {...register('email')}
               placeholder="name@example.com"
               disabled={isLoading}
+              className="bg-gray-100"
             />
             {errors.email && (
               <p className="text-red-500 text-sm">
@@ -169,6 +173,7 @@ export default function RegisterForm() {
               {...register('password')}
               placeholder="Create a password"
               disabled={isLoading}
+              className="bg-gray-100"
             />
             {errors.password && (
               <p className="text-red-500 text-sm">
@@ -184,7 +189,7 @@ export default function RegisterForm() {
               }
               disabled={isLoading}
             >
-              <SelectTrigger className="w-full">
+              <SelectTrigger className="w-full bg-gray-100">
                 <SelectValue placeholder="Select a role" />
               </SelectTrigger>
               <SelectContent>

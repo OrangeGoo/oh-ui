@@ -12,9 +12,7 @@ export default function Home() {
           Manage your office hours and appointments with ease and efficiency.
         </p>
         <Button className="mt-8 bg-white text-blue-600 hover:bg-gray-100">
-          <Link href="/register">
-            Get Started
-          </Link>
+          <Link href="/login">Get Started</Link>
         </Button>
       </div>
     </div>
