@@ -208,6 +208,7 @@ export default function RegisterForm() {
           </div>
           <Button
             className="w-full bg-blue-600 text-white hover:bg-blue-700"
+            type="submit"
             disabled={isLoading}
           >
             Create Account
